@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(31, 40, 71);
+    margin-left: 3em;
+    margin-top: 0em;
+    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('/font/upheavtt.ttf') format('truetype');
+}
+
+#Titulo{
+    /* border: 3px solid black; */
+    text-align: center;
+    font-size: 8em;
+    padding: 0;
+    height: 2em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+}
+
+#nivelNombre{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -2.4em;
+    margin-bottom: -0.5em;
+}
+
+.Tablero{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;    background-color: rgb(57, 81, 93);
+    height: 60em;
+    align-items: center;
+}
+
+#RedButton {
+    width: 48em;
+    height: 24em;
+    background-color: red;
+    box-shadow: 0px 30px rgb(119, 3, 3);
+    border-radius: 25px;
+    position: absolute;
+    cursor: pointer;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    user-select: none;
+}
+
+#RedButton:hover {
+    content: url('/img/prohibido.png');
+}
+
+#RedButton.clicked {
+    box-shadow: none;
+    background-color: rgb(197, 20, 20);
+}
+
+#Texto {
+    display: flex;
+    width: 70em;
+    height: 15em;
+    background-color: rgb(80, 78, 78);
+    position: absolute;
+    transform: translate(58%,100%);
+    border: 10px solid lightgray;
+    border-radius: 40px;
+    align-items: center;
+}
+
+#Texto2{
+    text-align: center;
+    width: 70em;
+    font-size: 300%;
+}
+
+#Contador{
+    display: flex;
+    align-items: center;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    border: 10px solid lightgray;
+    background-color: rgb(80, 78, 78);
+    border-radius: 40px;
+    transform: translate(1050%,90%);
+}
+
+#Contador2{
+    text-align: center;
+    width: 70em;
+    font-size: 400%;
+}

@@ -24,6 +24,13 @@ body{
     margin-bottom: 0.5em;
 }
 
+#nivelNombre{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -2.4em;
+    margin-bottom: -0.5em;
+}
+
 .Tablero{
     position: relative;
     display: flex;
@@ -41,10 +48,11 @@ body{
     border-radius: 25px;
     position: absolute;
     cursor: pointer;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    user-select: none;
 }
 
 #RedButton:hover {
@@ -54,4 +62,40 @@ body{
 #RedButton.clicked {
     box-shadow: none;
     background-color: rgb(197, 20, 20);
+}
+
+#Texto {
+    display: flex;
+    width: 70em;
+    height: 15em;
+    background-color: rgb(80, 78, 78);
+    position: absolute;
+    transform: translate(58%,100%);
+    border: 10px solid lightgray;
+    border-radius: 40px;
+    align-items: center;
+}
+
+#Texto2{
+    text-align: center;
+    width: 70em;
+    font-size: 300%;
+}
+
+#Contador{
+    display: flex;
+    align-items: center;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    border: 10px solid lightgray;
+    background-color: rgb(80, 78, 78);
+    border-radius: 40px;
+    transform: translate(1050%,90%);
+}
+
+#Contador2{
+    text-align: center;
+    width: 70em;
+    font-size: 400%;
 }

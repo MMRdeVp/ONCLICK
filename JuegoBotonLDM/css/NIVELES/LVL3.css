@@ -24,20 +24,28 @@ body{
     margin-bottom: 0.5em;
 }
 
+#nivelNombre{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -2.4em;
+    margin-bottom: -0.5em;
+}
+
 .Tablero{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px;    background-color: rgb(57, 81, 93);
+    border-radius: 10px;    
+    background-color: rgb(57, 81, 93);
     height: 60em;
     align-items: center;
 }
 
 #RedButton {
-    width: 48em;
-    height: 24em;
+    width: 10em;
+    height: 5em;
     background-color: red;
-    box-shadow: 0px 30px rgb(119, 3, 3);
+    box-shadow: 0px 15px rgb(119, 3, 3);
     border-radius: 25px;
     position: absolute;
     cursor: pointer;
@@ -45,6 +53,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    user-select: none;
 }
 
 #RedButton:hover {

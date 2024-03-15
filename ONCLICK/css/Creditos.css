@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(31, 40, 71);
+    margin-left: 3em;
+    margin-top: 0em;
+    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../font/upheavtt.ttf') format('truetype');
+}
+
+#Titulo{
+    /* border: 3px solid black; */
+    text-align: center;
+    font-size: 8em;
+    padding: 0;
+    height: 2em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+}
+
+.Tablero{
+    margin-top: 3em;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;    
+    background-color: rgb(57, 81, 93);
+    height: 50em;
+    align-items: center;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+#tituloTablero{
+    position: relative;
+    text-align: center;
+    height: 7.5em;
+    border-radius: 10px;    
+    font-size: 8em;
+    width: 10.2em;
+    padding-top: 1em;
+}
+
+#textoTablero{
+    position: relative;
+    text-align: center;
+    border-radius: 10px;    
+    font-size: 0.3em;
+    line-height: 3em;
+    padding-top: 1em;
+}
+
+#RedButton {
+    width: 12em;
+    height: 6em;
+    background-color: red;
+    box-shadow: 0px 20px rgb(119, 3, 3);
+    border-radius: 25px;
+    position: absolute;
+    cursor: pointer;
+    top: 55%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    user-select: none;
+}
+
+#RedButton:hover {
+    content: url('../img/Thumb.png');
+}
+
+#RedButton.clicked {
+    box-shadow: none;
+    background-color: rgb(32, 197, 20);
+}
+
+#RedButton2 {
+    width: 12em;
+    height: 6em;
+    background-color: red;
+    box-shadow: 0px 20px rgb(119, 3, 3);
+    border-radius: 25px;
+    position: absolute;
+    cursor: pointer;
+    top: 55%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    user-select: none;
+}
+
+#RedButton2:hover {
+    content: url('../img/Thumb.png');
+}
+
+#RedButton2.clicked {
+    box-shadow: none;
+    background-color: rgb(32, 197, 20);
+}
